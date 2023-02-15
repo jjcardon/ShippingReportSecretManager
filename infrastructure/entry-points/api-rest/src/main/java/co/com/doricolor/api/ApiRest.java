@@ -1,4 +1,5 @@
 package co.com.doricolor.api;
+
 import co.com.doricolor.model.shippingreport.mapper.ShippingReportResponse;
 import co.com.doricolor.usecase.shippingreport.ShippingReportUseCase;
 import lombok.AllArgsConstructor;

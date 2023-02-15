@@ -9,9 +9,6 @@ spring:
   profiles:
     include: null
   datasource:
-    url: "jdbc:sqlserver://jitsolutionssql.database.windows.net:1433;database=svdi-05;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30"
-    username: "james@jitsolutionssql"
-    password: "Jjcq0517*"
     driverClassName: "com.microsoft.sqlserver.jdbc.SQLServerDriver"
   jpa:
       databasePlatform: "org.hibernate.dialect.SQLServer2012Dialect"
@@ -26,7 +23,7 @@ management:
         enabled: true
 aws:
   secretsmanager:
-    endpoint: secretsmanager.us-east-1.amazonaws.com
+    secretname: "arn:aws:secretsmanager:us-east-1:553043648338:secret:prod/AppDocker/MsSqlServer-5oLQmc"
     region: us-east-1
   credentials:
     access-key: "AKIAYBQ7YL5JOYZ6YXJ3"

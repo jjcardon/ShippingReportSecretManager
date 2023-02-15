@@ -6,7 +6,7 @@ dependencies {
     implementation 'org.reactivecommons.utils:object-mapper-api:0.1.0'
     runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
     testImplementation 'org.reactivecommons.utils:object-mapper:0.1.0'
-    implementation 'com.amazonaws:aws-java-sdk-secretsmanager:1.11.316'
-    implementation 'com.amazonaws:aws-java-sdk-core'
-    implementation 'org.springframework.cloud:spring-cloud-starter-aws-secrets-manager-config:2.2.6.RELEASE'
+    implementation platform('software.amazon.awssdk:bom:2.19.14')
+    implementation 'software.amazon.awssdk:secretsmanager:2.19.14'
+    implementation 'software.amazon.awssdk:kinesis'
 }
